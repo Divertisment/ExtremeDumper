@@ -5,14 +5,13 @@
 		<ApplicationIcon>..\ExtremeDumper\Images\ExtremeDumper.ico</ApplicationIcon>
 	</PropertyGroup>
 	<PropertyGroup>
-		<TargetFramework>net462</TargetFramework>
+		<TargetFramework>net48</TargetFramework>
 		<OutputType>Exe</OutputType>
-		<OutputPath>..\bin\$(Configuration)</OutputPath>
+		<OutputPath>$(SolutionDir)bin\</OutputPath>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 	</PropertyGroup>
 	<ItemGroup>
-		<EmbeddedResource Include="..\ExtremeDumper.LoaderHook\bin\Win32\$(Configuration)\ExtremeDumper.LoaderHook.dll" Link="costura32\ExtremeDumper.LoaderHook.dll" />
-		<EmbeddedResource Include="..\ExtremeDumper.LoaderHook\bin\x64\$(Configuration)\ExtremeDumper.LoaderHook.dll" Link="costura64\ExtremeDumper.LoaderHook.dll" />
+		<EmbeddedResource Include="$(SolutionDir)bin\ExtremeDumper.LoaderHook.dll" Link="costura64\ExtremeDumper.LoaderHook.dll" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Costura.Fody" Version="4.1.0" />

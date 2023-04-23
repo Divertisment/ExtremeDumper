@@ -1,11 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<UseWindowsForms>true</UseWindowsForms>
 		<Description>.NET Assemblies Dumper</Description>
 		<ApplicationIcon>..\ExtremeDumper\Images\ExtremeDumper.ico</ApplicationIcon>
 	</PropertyGroup>
 	<PropertyGroup>
-		<TargetFramework>net462</TargetFramework>
+		<TargetFramework>net48</TargetFramework>
 		<PlatformTarget>x86</PlatformTarget>
 		<OutputType>Exe</OutputType>
 		<OutputPath>..\bin\$(Configuration)</OutputPath>
